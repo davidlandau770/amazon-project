@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav id="top_nav">
-            <img src="files/logo.png" alt="">
-        </nav>
-        <nav id="bottom_nav"></nav>
+      <nav id="top_nav">
+        <div class="center">
+          <img id="logo" src="files/logo.png" alt="logo" />
+          <div id="location">
+              <img id="iconLocation" src="files/iconLocation.png" alt="icon location"/>
+              <div id="TextConsolidation">
+                <p>Deliver to</p>
+                <p>Israel</p>
+              </div>
+          </div>
+          <div id="search">
+            <select id="select">
+              <option>all</option>
+            </select>
+            <input type="text" placeholder="Search Amazon" />
+            <button id="buttonSearch">
+              <img id="iconsSearch" src="files/iconsSearch.png" alt="" />
+            </button>
+          </div>
+          <details>
+            <summary>
+              <img id="flag" src="files/iconFlag.png" alt="flag usa" />
+              <p id="language">EN</p>
+            </summary>
+            <div class="details-content">
+              <label>Change language <a href="">Learn more</a></label>
+              <label><input type="radio" name="choice" />English - EN</label>
+              <hr>
+              <label><input type="radio" name="choice" />español - ES</label>
+              <label><input type="radio" name="choice" />Deutsch - DE</label>
+              <label><input type="radio" name="choice" />עברית - HE</label>
+              <label><input type="radio" name="choice" />한국어 - KO</label>
+            </div>
+          </details>
+          <div id="signIn">
+            <p>Hello, sign in</p>
+            <p>Account & Lists</p>
+          </div>
+          <div id="returns">
+            <p>Returns</p>
+            <p>& Orders</p>
+          </div>
+          <div id="shoppingCart">
+            <img src="files/shoppingCart.png" alt="">
+            <p>Cart</p>
+          </div>
+        </div>
+      </nav>
+      <nav id="bottom_nav"></nav>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-</body>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
