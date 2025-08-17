@@ -26,6 +26,7 @@ body {
 #top_nav #logo {
   grid-area: logo;
   height: 40px;
+  width: 90px;
   align-self: center;
 }
 #top_nav #location {
