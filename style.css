@@ -8,6 +8,8 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+/* top_nav */
 #top_nav {
   background-color: #232f3e;
   /* height: 100px; */
@@ -111,7 +113,6 @@ body {
   align-items: center;
   gap: 5px;
   padding: 5px 10px;
-  /* border: 1px solid red; */
   font-size: 0.8em;
   color: #333;
 }
@@ -176,3 +177,96 @@ body {
 #top_nav #shoppingCart img {
     width: 40px;
 }
+
+/* advertising */
+#advertising {
+    display: grid;
+    grid-template-areas: "textadvertising imagePepleadvertising imageLaptops googleCrom shop";
+    grid-template-columns: 5fr 1fr 2fr 1fr 3fr;
+    grid-template-rows:  50px;
+    border: 0.5px solid #888;
+}
+
+#advertising #textadvertising {
+    grid-area: textadvertising;
+    /* border: 3px solid red; */
+    color: rgb(0 0 0);
+    text-decoration: none;
+    background-color: white;
+    font-size: .45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#advertising #imagePepleadvertising {
+    grid-area: imagePepleadvertising;
+    /* border: 1px solid blue; */
+      /* width: 100%; */
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#advertising .laptops-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+
+#advertising .imageLaptops {
+    grid-area: imageLaptops;
+  
+  
+    /* display: flex; */
+    
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+#advertising #googleCrom {
+    grid-area: googleCrom;
+    color: #525558;
+     font-size: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+#advertising #shop {
+    grid-area: shop;
+    color: #007185;
+     font-size: .75rem;
+     text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+#advertising #shop:hover {
+    text-decoration: underline;
+}
+
+#advertising .image-overlay-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#advertising  .image-overlay-wrapper img {
+    display: block;
+    padding: 10px;
+    width: 70px;
+}
+
+#advertising  .overlay {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243, 243, 243, 0.45); 
+    border-radius: 4%;
